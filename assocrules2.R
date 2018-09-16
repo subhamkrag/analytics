@@ -111,3 +111,4 @@ write.csv(rules_DF, './data/myrules1.csv')
 
 #Visualisation
 plot(rules)
+
