@@ -73,9 +73,10 @@ course
 course[c(1,5)] # 1st & 5th date 
 course[1] ; course[9]
 (duration = course[8] - course[1])
+(duration1 = Sys.Date() - as.Date('02-07-1998','%d-%m-%Y'))
 
 #Date of Birth
-dob = as.Date('14-08-1994', '%d-%m-%Y')
+dob = as.Date('02-07-1998', '%d-%m-%Y')
 dob
 dob1= dob + seq(1,1000,30)  # create 1000 dates
 length(dob1)
@@ -121,3 +122,4 @@ format(rev(dateseq), "%A : %d-%b")
 #another Sequence : using another package
 chron::seq.dates("01/01/2017", "12/31/2017", by = "months")
 chron::seq.dates("01/01/2017", "12/31/2017", by = "weeks")
+
